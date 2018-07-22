@@ -1,0 +1,19 @@
+/* #myDiv{
+    height: 100px;
+    background-color: red;
+} */
+
+/* span{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background: red;
+    border:1px solid black;
+} */
+
+article{
+    display: inline-block;
+    width: 30%;
+    border: 1px solid black;
+    height: 200px;
+}
