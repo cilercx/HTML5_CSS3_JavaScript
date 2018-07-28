@@ -1,8 +1,4 @@
-main.js
-Bugün
-13:25
-V
-Vektorel Bilişim bir öğe yükledi
+main.jsz
 Javascript
 main.js
 // document.getElementById('myDiv').style.backgroundColor = 'red';
