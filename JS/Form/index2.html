@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('#gizle').click(function(){
+        $('#Yazi').hide();
+    });
+    $('#goster').click(function(){
+        $('#Yazi').show();
+    });
+
+    $('#btnTemizle').click(function(){
+        $('#txtYazi').val('');
+    });
+
+    $('#txtChange').change(function(){
+        alert('Metin kutusu değişti!')
+    });
+
+    $('#btnSonunaEkle').click(function(){
+        $('#yazi').after('<p>Sonuna eklenecek yazı..</p>')
+    });
+    $('#btnRenkDegistir').click(function(){
+        $('#renkliyazi').css('color','red')
+    });
+
+    $('#btnAppendYazi').click(function(){
+        $('.txtOrnekYazi').append(' <b>Appended yazi</b>.');
+    });
+    $('#btnAppendMaddeliYazi').click(function(){
+        $('ol').append('<li>Appended maddeli yazı</li>');
+    });
+
+    }); 
+    </script>
+
+</head>
+<body>
+    <p >---------Örnek 1---------</p>    
+    <button id="goster">Göster</button>
+    <button id="gizle">Gizle</button>
+    <p id="Yazi">Yazı</p>
+    <p >---------Örnek 2---------</p>    
+    <input type="text" id="txtYazi">
+    <input type="button" id="btnTemizle" value="Temizle" />
+    <p >---------Örnek 3---------</p>    
+    <input type="text" id="txtChange">
+    <p >---------Örnek 4---------</p>  
+    <input type="button" id="btnSonunaEkle" value="Sonuna Ekle" >      
+    <p id="yazi" >İlk yazı</p>
+    <p >---------Örnek 5---------</p>  
+    <input type="button" id="btnRenkDegistir" value="Renk Değiştir" >      
+    <p id="renkliyazi" >Rengi değiştirilecek Yazı</p>    
+    <p >---------Örnek 6---------</p>  
+    <p class="txtOrnekYazi">Örnek Yazı</p>
+    <p class="txtOrnekYazi">Örnek 2. Yazı</p>
+
+    <ol>
+        <li>Maddeli yazı 1</li>
+        <li>Maddeli yazı 2</li>
+        <li>Maddeli yazı 3</li>
+    </ol>
+
+    <button id="btnAppendYazi">Append yazı</button>
+    <button id="btnAppendMaddeliYazi">Append maddeli yazı</button>
+
+</body>
+</html>

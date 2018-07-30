@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+
+	<!-- indirilen dosyayı dahil etme -->
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	
+	<!-- jquery sunucusundan belirlenen sürümü dahil etme-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		
+	</div>
+	<div class="content">
+		<input type="text" id="ad">
+		<button id="dugme">Tıkla</button>
+	</div>
+	<div class="footer">
+		
+	</div>
+	
+</div>
+
+
+<script type="text/javascript">
+
+//kullanım
+$("eleman seçici").eylem(function(){
+    //iş yapılacak;
+    
+});
+
+
+//sayfa yüklendiğinde eylemi
+$(document).ready(function(){
+
+//işlemler
+
+}
+);
+
+
+//nesne içindeki metinsel veriyi okuma ve yazma
+//nesneye değer eklemek için parantez içine bir değer yazılır
+$("div").text('<div>Vektorel</div>');
+
+//nesne içindeki tüm html içeriği okuma ve yazma
+//nesneye değer eklemek için parantez içine bir değer yazılır
+$("select").html();
+
+//inputtaki value değerini okuma ve yazma
+//nesneye değer eklemek için parantez içine bir değer yazılır
+$("div").val();
+
+
+//nesnenin içerik kısmının sonuna değer ekler
+$("div").append();
+
+//nesnenin içiriğinin başına değer ekler
+$("div").prepend();
+
+//nesnenin devamına yeni değer ekler
+$("div").after();
+
+//inputtaki value değerini çeker
+$("div").before();
+
+
+//inputtaki value değerini çeker
+$("div").empty();
+
+//inputtaki value değerini çeker
+$("div").remove();
+
+
+//nesne değiştirildiğinde eylemi. Örneğin bir selectin optionı
+$("#ad").change(function () {
+	// işlemler
+});
+
+//nesneye tıklandığında eylemi
+$("#ad").click(function () {
+	// işlemler
+});
+
+//nesne uzerindeki focus yitirildiginde tetiklenir. ornegin bir textbox
+$("#ad").blur(function () {
+	// işlemler
+});
+
+//nesne seçildiğinde/odaklanıldığında eylemi
+$("#ad").focus(function () {
+	// işlemler
+});
+
+//nesnenin üzerine mouse ile gelindiğinde eylemi
+$("#ad").hover(function () {
+	// işlemler
+});
+
+//klavye tuşuna basılı olduğu an eylemi
+$("#ad").keydown(function () {
+	// işlemler
+});
+ 
+//klavyede tuşuna basılıp çekilme işlemi eylemi
+$("#ad").keypress(function () {
+	// işlemler
+});
+
+//klavyede tuşa basılıp çekildikten sonraki an eylemi
+$("#ad").keyup(function () {
+	// işlemler
+});
+
+//mouse ile basılı tutulduğu andaki eylem eylemi
+$("#ad").mousedown(function () {
+	// işlemler
+})
+
+//mouse ile basılıp çekildikten sonraki eylemi
+$("#ad").mouseup(function () {
+	// işlemler
+})
+
+//mouse ile üzerinde gezildiği andaki eylem eylemi
+$("#ad").mousemove(function () {
+	// işlemler
+})
+
+//mouse üzerinden çekildiği andaki eylem eylemi
+$("#ad").mouseout(function () {
+	// işlemler
+})
+
+
+//adres gosterilen elemente event atama
+$("#ad").on("event","element",function () {
+	// işlemler
+})
+$('div ul').on('click','li', function(){
+	alert('hahaha');
+});
+
+
+//tarayıcıda zoom işlemi yapıldığında
+$("#ad").resize(function () {
+	//işlemler
+})
+
+//scroll eylemi yapıldığında
+$("#ad").scroll(function () {
+	// işlemler
+    
+})
+
+//selektörün işaret ettiğini alan dahilinde bir metin parçası seçilirse(highlight) tetiklenir.
+$("#ad").select(function () {
+	// işlemler
+})
+
+// seçili (#ad) formu submit edilmeden hemen önce tetiklenir.
+$("#ad").submit(function () {
+	// işlemler
+})
+
+
+//hehrnagi bir eylemi tetiklemek için
+$("#ad").trigger("eylem (click,change vs)");
+
+//nesneyi gizlemek için kullanılır
+$("#ad").hide("slow,fast veya mili saniye cinsinden değer (1000)");
+
+//nesneyi gostermek için kullanılır
+$("#ad").show("slow,fast veya mili saniye cinsinden değer (1000)");
+
+//nesneyi gostermek için kullanılır
+$("#ad").fadeIn("slow,fast veya mili saniye cinsinden değer (1000)");
+
+//nesneyi gizlemek için kullanılır
+$("#ad").fadeOut("slow,fast veya mili saniye cinsinden değer (1000)");
+
+//nesneyi gizlemek ve gostermek için kullanılır
+$("#ad").fadeToggle("slow,fast veya mili saniye cinsinden değer (1000)");
+
+//nesneyi gostermek için kullanılır
+$("#ad").fadeTo("slow,fast veya mili saniye cinsinden değer (1000) ve opacity değeri");
+
+
+//nesneyi aşağı kayarak göstermek için kullanılır
+$("#ad").slideDown("slow,fast veya mili saniye cinsinden değer (1000)");
+
+//nesneyi aşağı kayarak gizlemek için kullanılır
+$("#ad").slideUp("slow,fast veya mili saniye cinsinden değer (1000)");
+
+//nesneyi aşağı kayarak gizlemek ve gostermek için kullanılır
+$("#ad").slidweToggle("slow,fast veya mili saniye cinsinden değer (1000)");
+
+//nesnenin css özelliklerinde animasyonlu işlemler yapmak için kullanılır
+// animate({hegiht:100px,width:200px},1000);
+// parametrelere toggle değeri verilebiliyor.
+$("#ad").animate({parametreler},hız); 
+$( "element" ).animate({height: "80px",width:"50px"},500)
+
+//mevcut efekt ya da geçisi durdurmak için kullanılır
+$("#ad").animate({parametreler},hız); 
+
+
+// arka arkaya işlemler tanımlamak için nokta "." ile birleştirme yapılır
+$("div").fadeIn().hide(); 
+
+//nesneye tek css özelliği atamak için
+$("div").css("background","#f00");
+
+//nesneye birden çok css özelliği atamak için
+$("div").css({"background":"#f00", "color":"#fff"});
+
+//nesneye class ekler
+$("div").addClass("kutu");
+
+//nesnedeki classı siler
+$("div").removeClass("kutu");
+
+//nesnedeki classı siler ve ekler
+$("div").toggleClass("kutu");
+
+
+//nesnenin genişlik değerleri 
+//nesnenin margin, padding ve border hariç içindeki genişlik
+$("div").width(); //değer atamak için width(500);
+
+//nesnenin margin ve border hariç içindeki genişlik
+$("div").innerWidth(); //değer atamak için innerWidth(500);
+
+//nesnenin margin hariç içindeki genişlik
+$("div").outerWidth(); //değer atamak için Outerwidth(500);
+
+//nesnenin margin, padding ve border dahil içindeki genişlik
+$("div").outerWidth(true); 
+
+
+//nesnenin yükseklik değerleri 
+//nesnenin margin, padding ve border hariç içindeki yükseklik
+$("div").height(); //değer atamak için height(500);
+
+//nesnenin margin ve border hariç içindeki yükseklik
+$("div").innerHeight(); //değer atamak için innerWidth(500);
+
+//nesnenin margin hariç içindeki yükseklik
+$("div").outerHeight(); //değer atamak için Outerwidth(500);
+
+//nesnenin margin, padding ve border dahil içindeki yükseklik
+$("div").outerHeight(true); 
+
+
+//nesneyi kapsayan elementi seçer
+$("div").parent();
+
+//nesneyi kapsayan tüm elementleri seçer
+$("div").parents(); //belli bir üst elementi seçmek için $("div").parents("#content");
+
+//nesneyi kapsayan tüm elementleri belirlenen elemente kadar seçer
+$("div").parentsUntil("#header");
+
+
+//nesnenin bir kademe altındaki nesneleri seçer
+$("div").children(); //belli nesneleri seçmek için children("a");
+
+//nesnenin altındaki elemanları girilen kritere göre seçer
+$("div").find("*"); 
+
+//nesnenin kardeş elementlerini seçer. ör: <div id=""kapsayan> <p></p> <span id="secilen"></span> <a></a> </div> 
+$("#secilen").siblings(); // span ın yanındaki p ve a elementlerini seçer
+$("#secilen").siblings("p") // sadece p elemanlarını seçer
+
+//nesnenin kendisinden sonra gelen nesneyi seçer
+$("div").next();
+
+//nesnenin kendisinden sonra gelen tüm nesneleri seçer
+$("div").nextAll();
+$("div").nextAll("p"); // sonra gelen sadece p etiketlerini seçer
+
+//nesnenin kendisindne sonra gelen belirtilen nesneye kadar olan (belirtilen dahil değil) nesneleri seçer 
+$("div").nextUntil("h5");
+
+
+
+//nesnenin kendisinden önce gelen nesneyi seçer
+$("div").prev();
+
+//nesnenin kendisinden önce gelen tüm nesneleri seçer
+$("div").prevAll();
+$("div").prevAll("p"); // önce gelen sadece p etiketlerini seçer
+
+//nesnenin kendisindne önce gelen belirtilen nesneye kadar olan (belirtilen dahil değil) nesneleri seçer 
+$("div").prevUntil("h1");
+
+
+//belirlenen nesneler içinde ilk nesneyi seçer
+$("div span").first();
+
+//belirlenen nesneler içinde son nesneyi seçer
+$("div span").last();
+
+//belirlenen nesneler dışındaki nesneleri seçer
+$("div").not(".box");
+
+
+
+
+</script>
+	
+</body>
+</html>
